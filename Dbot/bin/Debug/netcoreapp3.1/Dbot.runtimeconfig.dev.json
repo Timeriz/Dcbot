@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\nicoa\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\nicoa\\.nuget\\packages"
+      "C:\\Users\\TZ\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\TZ\\.nuget\\packages"
     ]
   }
 }

@@ -10,6 +10,8 @@ using Discord;
 using System.Linq;
 using System.Text;
 using DSharpPlus.Interactivity.Enums;
+using DSharpPlus;
+using DSharpPlus.Interactivity;
 //[RequireRoles(RoleCheckMode.All, "Moderator", "Owner")]
 //
 namespace Dbot.Commands
@@ -156,7 +158,7 @@ namespace Dbot.Commands
                 Description = desc,
                 Color = DiscordColor.Black,
             };
-            var message = await ctx.Member.SendMessageAsync(embed: contactEmbed);
+            var message = await ctx.Channel.SendMessageAsync(embed: contactEmbed);
         }
         private DiscordEmoji[] _pollEmojiCache;
         [Command("poll"), Description("Start a poll for a simple yes/no question"), Cooldown(2, 30, CooldownBucketType.Guild)]
@@ -200,10 +202,14 @@ namespace Dbot.Commands
                 var send = await ctx.RespondAsync(embed: embed).ConfigureAwait(false);
 
 
-                var pollResult = await interactivity.DoPollAsync(send, _pollEmojiCache, PollBehaviour.DeleteEmojis, duration);
-                var yesVotes = pollResult[0].Total;
-                var noVotes = pollResult[1].Total;
+                var pollResult = await interactivity.DoPollAsync(send, _pollEmojiCache, PollBehaviour.KeepEmojis, duration);
+                var reactionsYes = await send.GetReactionsAsync(_pollEmojiCache[0]);
+                var reactionsNo = await send.GetReactionsAsync(_pollEmojiCache[1]);
+                await send.DeleteAllReactionsAsync();
 
+                var yesVotes = reactionsYes.Count - 1;
+                var noVotes = reactionsNo.Count - 1;
+                
 
                 var pollResultText = new StringBuilder();
                 pollResultText.AppendLine("**" + title);

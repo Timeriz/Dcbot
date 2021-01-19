@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nicoa\\Desktop\\Dcbot\\Dbot\\Dbot.csproj": {}
+    "C:\\Users\\TZ\\Documents\\GitHub\\Dcbot\\Dbot\\Dbot.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nicoa\\Desktop\\Dcbot\\Dbot\\Dbot.csproj": {
+    "C:\\Users\\TZ\\Documents\\GitHub\\Dcbot\\Dbot\\Dbot.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nicoa\\Desktop\\Dcbot\\Dbot\\Dbot.csproj",
+        "projectUniqueName": "C:\\Users\\TZ\\Documents\\GitHub\\Dcbot\\Dbot\\Dbot.csproj",
         "projectName": "Dbot",
-        "projectPath": "C:\\Users\\nicoa\\Desktop\\Dcbot\\Dbot\\Dbot.csproj",
-        "packagesPath": "C:\\Users\\nicoa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nicoa\\Desktop\\Dcbot\\Dbot\\obj\\",
+        "projectPath": "C:\\Users\\TZ\\Documents\\GitHub\\Dcbot\\Dbot\\Dbot.csproj",
+        "packagesPath": "C:\\Users\\TZ\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\TZ\\Documents\\GitHub\\Dcbot\\Dbot\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\nicoa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\TZ\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,11 +22,11 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.emzi0767.com/api/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -38,6 +38,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "DSharpPlus": {
               "target": "Package",
@@ -71,7 +72,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
