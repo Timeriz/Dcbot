@@ -40,7 +40,8 @@ namespace Dbot
                 MinimumLogLevel = LogLevel.Debug,
 
             };
-
+           
+            
             Client = new DiscordClient(config);
             Client.Ready += OnClientReady;
             
@@ -51,12 +52,13 @@ namespace Dbot
 
             var commandsConfig = new CommandsNextConfiguration
             {
+              
                 StringPrefixes = new string[] { configJson.Prefix },
                 EnableDms = true,
                 EnableMentionPrefix = true,
                 DmHelp = true,
-                IgnoreExtraArguments = false,
-
+                IgnoreExtraArguments = true,
+                EnableDefaultHelp = false,
             };
 
 
@@ -94,7 +96,7 @@ namespace Dbot
             var embed = new DiscordEmbedBuilder
             {
                 Title = "Something went wrong, Type !help to find usage of commands",
-                Description = $"{emoji} " + e.Exception.GetType() + e.Exception.Message + "" + DateTime.Now,
+                Description = $"{emoji} " + e.Exception.Message + "" + DateTime.Now,
                 Color = new DiscordColor(0xFF0000)
             };
             await e.Context.RespondAsync("", embed: embed);

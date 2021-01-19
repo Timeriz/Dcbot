@@ -16,6 +16,7 @@ using DSharpPlus.Interactivity;
 //
 namespace Dbot.Commands
 {
+    
     class MainCommands : BaseCommandModule
     {
         [Command("Bimpo")]
@@ -26,15 +27,13 @@ namespace Dbot.Commands
         [Command("Join")]
         public async Task Join(CommandContext ctx)
         {
+            
             var joinEmbed = new DiscordEmbedBuilder
             {
                 Title = "Join?",
                 ImageUrl = "https://pbs.twimg.com/media/Dt0OcayWwAAvGvN?format=jpg&name=large",
                 Color = DiscordColor.Blue,
                 Description = "Joina fresh kilpailu",
-
-
-
             };
 
             var joinMessage = await ctx.Channel.SendMessageAsync(embed: joinEmbed).ConfigureAwait(false);
@@ -47,7 +46,7 @@ namespace Dbot.Commands
         }
 
         [Command("CreateCustomEmbed")]
-        [Description("(Tar nästa meddelandet efter kommandot). Skapar en embed, OBS Måste skrivas exakt som följande:Tittel,Deskription,bildlänk,")]
+        [Description("(Tar nästa meddelandet efter kommandot). Skapar en embed, OBS Måste skrivas som följande:Tittel;Deskription;bildlänk;webbsidalänk ( - ifall du vill skippa någon av dem)")]
         public async Task CreateCustomEmbed(CommandContext ctx)
         {
             var interacitvity = ctx.Client.GetInteractivity();
@@ -234,7 +233,11 @@ namespace Dbot.Commands
                 await ctx.RespondAsync("Error: the question can't be empty");
             }
         }
-
+        [Command("present") ,Description("See who from a specified Role is present")]
+        public async Task Present(CommandContext ctx,[Description("specified role")] string selectRole)
+        {
+            await = ctx.Channel.SendMessageAsync(RoleCheckMode.Any == role)
+        }
     }
 
 }
