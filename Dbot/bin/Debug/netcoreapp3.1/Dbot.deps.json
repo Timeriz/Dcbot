@@ -8,9 +8,9 @@
     ".NETCoreApp,Version=v3.1": {
       "Dbot/1.0.0": {
         "dependencies": {
-          "DSharpPlus": "4.0.0-rc1",
-          "DSharpPlus.CommandsNext": "4.0.0-rc1",
-          "DSharpPlus.Interactivity": "4.0.0-rc1",
+          "DSharpPlus": "4.0.0-nightly-00777",
+          "DSharpPlus.CommandsNext": "4.0.0-nightly-00777",
+          "DSharpPlus.Interactivity": "4.0.0-nightly-00777",
           "Discord.Net": "2.2.0"
         },
         "runtime": {
@@ -93,10 +93,10 @@
           }
         }
       },
-      "DSharpPlus/4.0.0-rc1": {
+      "DSharpPlus/4.0.0-nightly-00777": {
         "dependencies": {
           "Emzi0767.Common": "2.2.2",
-          "Microsoft.Extensions.Logging.Abstractions": "3.1.8",
+          "Microsoft.Extensions.Logging.Abstractions": "5.0.0",
           "Newtonsoft.Json": "12.0.3",
           "System.Memory": "4.5.4",
           "System.Net.Http": "4.3.4",
@@ -106,32 +106,32 @@
         },
         "runtime": {
           "lib/netstandard2.0/DSharpPlus.dll": {
-            "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.0.0.0"
+            "assemblyVersion": "4.0.0.777",
+            "fileVersion": "4.0.0.777"
           }
         }
       },
-      "DSharpPlus.CommandsNext/4.0.0-rc1": {
+      "DSharpPlus.CommandsNext/4.0.0-nightly-00777": {
         "dependencies": {
-          "DSharpPlus": "4.0.0-rc1",
-          "Microsoft.Extensions.DependencyInjection": "3.1.7"
+          "DSharpPlus": "4.0.0-nightly-00777",
+          "Microsoft.Extensions.DependencyInjection": "5.0.1"
         },
         "runtime": {
           "lib/netstandard2.0/DSharpPlus.CommandsNext.dll": {
-            "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.0.0.0"
+            "assemblyVersion": "4.0.0.777",
+            "fileVersion": "4.0.0.777"
           }
         }
       },
-      "DSharpPlus.Interactivity/4.0.0-rc1": {
+      "DSharpPlus.Interactivity/4.0.0-nightly-00777": {
         "dependencies": {
           "ConcurrentHashSet": "1.1.0",
-          "DSharpPlus": "4.0.0-rc1"
+          "DSharpPlus": "4.0.0-nightly-00777"
         },
         "runtime": {
           "lib/netstandard2.0/DSharpPlus.Interactivity.dll": {
-            "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.0.0.0"
+            "assemblyVersion": "4.0.0.777",
+            "fileVersion": "4.0.0.777"
           }
         }
       },
@@ -149,30 +149,30 @@
           }
         }
       },
-      "Microsoft.Extensions.DependencyInjection/3.1.7": {
+      "Microsoft.Extensions.DependencyInjection/5.0.1": {
         "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.7"
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0"
         },
         "runtime": {
-          "lib/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.dll": {
-            "assemblyVersion": "3.1.7.0",
-            "fileVersion": "3.100.720.37108"
+          "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.dll": {
+            "assemblyVersion": "5.0.0.1",
+            "fileVersion": "5.0.120.57516"
           }
         }
       },
-      "Microsoft.Extensions.DependencyInjection.Abstractions/3.1.7": {
+      "Microsoft.Extensions.DependencyInjection.Abstractions/5.0.0": {
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
-            "assemblyVersion": "3.1.7.0",
-            "fileVersion": "3.100.720.37108"
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.51904"
           }
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/3.1.8": {
+      "Microsoft.Extensions.Logging.Abstractions/5.0.0": {
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {
-            "assemblyVersion": "3.1.8.0",
-            "fileVersion": "3.100.820.42004"
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.51904"
           }
         }
       },
@@ -856,26 +856,26 @@
       "path": "discord.net.websocket/2.2.0",
       "hashPath": "discord.net.websocket.2.2.0.nupkg.sha512"
     },
-    "DSharpPlus/4.0.0-rc1": {
+    "DSharpPlus/4.0.0-nightly-00777": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-uuOdv1IjXbPXzTYXL0f/cDcXVTAXfLLAgU/Bxb2GgGGLKqikdV1oc9AlFxix4cNZlOcj96nEq4ndzECEyN6MLg==",
-      "path": "dsharpplus/4.0.0-rc1",
-      "hashPath": "dsharpplus.4.0.0-rc1.nupkg.sha512"
+      "sha512": "sha512-Dw29PpzPaqN0MlUed4M5vKwkNiWA9MLo/qfc7O6vtLxRFfMT9LtRBHd6VlP3f+KBVQn7TdL66OZ0s2dmQMVCtQ==",
+      "path": "dsharpplus/4.0.0-nightly-00777",
+      "hashPath": "dsharpplus.4.0.0-nightly-00777.nupkg.sha512"
     },
-    "DSharpPlus.CommandsNext/4.0.0-rc1": {
+    "DSharpPlus.CommandsNext/4.0.0-nightly-00777": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-aK3H+WgoA9Gwvkzl9mul7Va+jijA8ajOZ6s8mBLW9iCGAJjVl7DUxI256AFAS1YvGRjeR7Ar61fwq6z7daZp0w==",
-      "path": "dsharpplus.commandsnext/4.0.0-rc1",
-      "hashPath": "dsharpplus.commandsnext.4.0.0-rc1.nupkg.sha512"
+      "sha512": "sha512-zUfZYW2ItFvEVDHJj4FgJnTJLuLUrwMRhTtrFMXeJG/T03glYlolNj1ETn3KDPas5smxIj7pHCt5wSNnkXJtEg==",
+      "path": "dsharpplus.commandsnext/4.0.0-nightly-00777",
+      "hashPath": "dsharpplus.commandsnext.4.0.0-nightly-00777.nupkg.sha512"
     },
-    "DSharpPlus.Interactivity/4.0.0-rc1": {
+    "DSharpPlus.Interactivity/4.0.0-nightly-00777": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-jzWMdOjD3w7U2oiNlkgOwKXjZWFvnvS9wGkZRV6K5vIcOB5KzLQsPu1cAj9Pv5pwV7zcxocJvfbq/2psWcSi5g==",
-      "path": "dsharpplus.interactivity/4.0.0-rc1",
-      "hashPath": "dsharpplus.interactivity.4.0.0-rc1.nupkg.sha512"
+      "sha512": "sha512-sdD25RZBv93xLKw5GZ7jW7hhXdOPinZro9z6DtImtsFTHYIab4pnApBedFSSWSAz1Q0w8mi7o3E1c9Dmvt1NYg==",
+      "path": "dsharpplus.interactivity/4.0.0-nightly-00777",
+      "hashPath": "dsharpplus.interactivity.4.0.0-nightly-00777.nupkg.sha512"
     },
     "Emzi0767.Common/2.2.2": {
       "type": "package",
@@ -884,26 +884,26 @@
       "path": "emzi0767.common/2.2.2",
       "hashPath": "emzi0767.common.2.2.2.nupkg.sha512"
     },
-    "Microsoft.Extensions.DependencyInjection/3.1.7": {
+    "Microsoft.Extensions.DependencyInjection/5.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-yp38AFc5tJQZkjINjXBcxq+dANU06lo27D84duitZthtRPsgKJL87uf9RWRsDdRsWd+kXflmdMWFLKFjyKx6Pw==",
-      "path": "microsoft.extensions.dependencyinjection/3.1.7",
-      "hashPath": "microsoft.extensions.dependencyinjection.3.1.7.nupkg.sha512"
+      "sha512": "sha512-//mDNrYeiJ0eh/awFhDFJQzkRVra/njU5Y4fyK7X29g5HScrzbUkKOKlyTtygthcGFt4zNC8G5CFCjb/oizomA==",
+      "path": "microsoft.extensions.dependencyinjection/5.0.1",
+      "hashPath": "microsoft.extensions.dependencyinjection.5.0.1.nupkg.sha512"
     },
-    "Microsoft.Extensions.DependencyInjection.Abstractions/3.1.7": {
+    "Microsoft.Extensions.DependencyInjection.Abstractions/5.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-oKL2yNtTN1/cOp+cbdyv5TeLzO+GkO9B3fvbcPzKWTNCkDoH3ccYS3FWC1p4KSYe9frW4WsyfSTeM8X+xftOig==",
-      "path": "microsoft.extensions.dependencyinjection.abstractions/3.1.7",
-      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.3.1.7.nupkg.sha512"
+      "sha512": "sha512-ORj7Zh81gC69TyvmcUm9tSzytcy8AVousi+IVRAI8nLieQjOFryRusSFh7+aLk16FN9pQNqJAiMd7BTKINK0kA==",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/5.0.0",
+      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512"
     },
-    "Microsoft.Extensions.Logging.Abstractions/3.1.8": {
+    "Microsoft.Extensions.Logging.Abstractions/5.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-LxQPR/KE4P9nx304VcFipWPcW8ZOZOGHuiYlG0ncAQJItogDzR9nyYUNvziLObx2MfX2Z9iCTdAqEtoImaQOYg==",
-      "path": "microsoft.extensions.logging.abstractions/3.1.8",
-      "hashPath": "microsoft.extensions.logging.abstractions.3.1.8.nupkg.sha512"
+      "sha512": "sha512-NxP6ahFcBnnSfwNBi2KH2Oz8Xl5Sm2krjId/jRR3I7teFphwiUoUeZPwTNA21EX+5PtjqmyAvKaOeBXcJjcH/w==",
+      "path": "microsoft.extensions.logging.abstractions/5.0.0",
+      "hashPath": "microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/1.1.1": {
       "type": "package",

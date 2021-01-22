@@ -12,6 +12,7 @@ using System.Text;
 using DSharpPlus.Interactivity.Enums;
 using DSharpPlus;
 using DSharpPlus.Interactivity;
+using System.Collections.Generic;
 //[RequireRoles(RoleCheckMode.All, "Moderator", "Owner")]
 //
 namespace Dbot.Commands
@@ -236,7 +237,31 @@ namespace Dbot.Commands
         [Command("present") ,Description("See who from a specified Role is present")]
         public async Task Present(CommandContext ctx,[Description("specified role")] string selectRole)
         {
-            await = ctx.Channel.SendMessageAsync(RoleCheckMode.Any == role)
+            List<string> list = new List<string>();
+            List<ulong> uList = new List<ulong>();
+            string str = null;
+            ulong roleID = 0;
+            foreach (var role in ctx.Guild.Roles)
+            {
+                str = role.Value.Name;
+                roleID = role.Key;
+                list.Add(str);
+                uList.Add(roleID);
+                
+            }
+            ulong[] uArr = uList.ToArray();
+            string[] strArr = list.ToArray();
+            int sRoleIndex = Array.IndexOf(strArr, selectRole);
+
+            DiscordRole dcRole;
+            if(strArr.Contains(selectRole))
+            {
+                await ctx.Channel.SendMessageAsync("@" + strArr[sRoleIndex] + uArr[sRoleIndex]);
+                await ctx.Channel.SendMessageAsync(ctx.Message.MentionedRoles);
+                dcRole = ctx.Guild.GetRole(uArr[sRoleIndex]);
+                
+                
+            }
         }
     }
 
